@@ -11,6 +11,6 @@ switch (process.platform) {
         module.exports = path.join(__dirname, 'bin', 'mac', 'advpls');
         break;
     default:
-        throw new Error('Unsuported platform: ' + process.platform);
+        module.exports = path.join(__dirname, 'bin', 'windows', 'advpls.exe');
 }
 
